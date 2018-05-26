@@ -1,4 +1,4 @@
-FROM node:8.9.4-alpine
+FROM node:10.2.1-alpine
 
 MAINTAINER Tomas Janecek
 
