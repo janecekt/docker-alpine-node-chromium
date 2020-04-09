@@ -1,4 +1,4 @@
-FROM node:10.2.1-alpine
+FROM node:13.12.0-alpine3.10
 
 MAINTAINER Tomas Janecek
 
@@ -6,6 +6,4 @@ LABEL Description="Docker image containing node, yarn and chromium intended as b
 
 ENV CHROME_BIN=/usr/bin/chromium-browser
 
-RUN echo 'http://dl-cdn.alpinelinux.org/alpine/v3.7/main' > /etc/apk/repositories \
-  && echo 'http://dl-cdn.alpinelinux.org/alpine/v3.7/community' >> /etc/apk/repositories \
-  && apk --no-cache add chromium
+RUN apk --no-cache add chromium
