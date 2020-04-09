@@ -1,6 +1,6 @@
 ### Overview
 
-* Image based node:8.9.4-alpine
+* Image based node:13.12.0-alpine3.10
 * Contains node + yarn to support node-based builds
 * Contains chromium to support execution of Karma or similar tests
 
